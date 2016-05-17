@@ -2424,3 +2424,1287 @@ Processing by ArticlesController#show as HTML
   Rendered articles/_comment.html.erb (0.8ms)
   Rendered articles/show.html.erb within layouts/application (5.5ms)
 Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-05-18 01:25:33 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/prateek/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/prateek/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/prateek/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-05-18 01:25:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/prateek/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/prateek/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/prateek/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTags (20160517195058)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160517195058"]]
+  [1m[36m (174.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTaggings (20160517195114)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tag_id" integer, "article_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_taggings_on_article_id" ON "taggings" ("article_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160517195114"]]
+  [1m[36m (165.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_article_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-05-18 01:25:45 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-05-18 01:25:46 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (6.8ms)
+  Rendered articles/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `tag_list' for #<Article:0x007fa559e13588>
+Did you mean?  tag_ids):
+    17:     </p>
+    18:     <p>
+    19:       <%= f.label :tag_list %><br />
+    20:       <%= f.text_field :tag_list %>
+    21:     </p>
+    22: 
+    23: <% end %>
+  app/views/articles/_form.html.erb:20:in `block in _app_views_articles__form_html_erb___1827880406059384838_70174077099120'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___1827880406059384838_70174077099120'
+  app/views/articles/new.html.erb:2:in `_app_views_articles_new_html_erb__3279235337528571603_70174079695900'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-05-18 01:25:46 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (6.7ms)
+  Rendered articles/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `tag_list' for #<Article:0x007fa54e7c0740>
+Did you mean?  tag_ids):
+    17:     </p>
+    18:     <p>
+    19:       <%= f.label :tag_list %><br />
+    20:       <%= f.text_field :tag_list %>
+    21:     </p>
+    22: 
+    23: <% end %>
+  app/views/articles/_form.html.erb:20:in `block in _app_views_articles__form_html_erb___1827880406059384838_70173981585400'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___1827880406059384838_70173981585400'
+  app/views/articles/new.html.erb:2:in `_app_views_articles_new_html_erb__3279235337528571603_70173981562820'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.8ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ruby"], ["created_at", "2016-05-17 19:58:04.156595"], ["updated_at", "2016-05-17 19:58:04.156595"]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "taggings" ("article_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["article_id", 2], ["tag_id", 1], ["created_at", "2016-05-17 19:58:04.167917"], ["updated_at", "2016-05-17 19:58:04.167917"]]
+  [1m[36m (165.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Development"], ["created_at", "2016-05-17 19:58:13.191308"], ["updated_at", "2016-05-17 19:58:13.191308"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("article_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["article_id", 2], ["tag_id", 2], ["created_at", "2016-05-17 19:58:13.195185"], ["updated_at", "2016-05-17 19:58:13.195185"]]
+  [1m[36m (164.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?  [["article_id", 2]]
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-05-18 01:28:59 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered comments/_form.html.erb (1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 2]]
+  Rendered articles/_comment.html.erb (0.8ms)
+  Rendered articles/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 26ms (Views: 16.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-05-18 01:29:24 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (12.9ms)
+  Rendered articles/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-05-18 01:29:38 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D5FDHZqoncWfanIlUFcbO1gqtkGNPmlbu9N63+8UqQxhTL1QpMg1SJxBLKe8X1WC2jCmHZsyQWOtF5xFfjd2fQ==", "article"=>{"title"=>"sasambvsav", "body"=>"vsjavsnbavsanb", "tag_list"=>"hina"}, "commit"=>"Create Article"}
+Unpermitted parameter: tag_list
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "sasambvsav"], ["body", "vsjavsnbavsanb"], ["created_at", "2016-05-17 19:59:38.643506"], ["updated_at", "2016-05-17 19:59:38.643506"]]
+  [1m[36m (196.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 199ms (ActiveRecord: 196.6ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:29:38 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered comments/_form.html.erb (0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-05-18 01:29:54 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?  [["article_id", 9]]
+  Rendered articles/_form.html.erb (5.4ms)
+  Rendered articles/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:30:17 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered comments/_form.html.erb (2.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-05-18 01:30:19 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_form.html.erb (2.5ms)
+  Rendered articles/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-05-18 01:31:22 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_form.html.erb (8.9ms)
+  Rendered articles/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-05-18 01:31:35 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9nYHhqYt20y1i5S4XSZtsMM0KnY5AFLge1rNokkVQzeYq/nLmE1zwbagyjqxLiMJQS46Ki8Methtnis42DacRg==", "article"=>{"title"=>"sasambvsav", "body"=>"vsjavsnbavsanb", "tag_list"=>"ruby, development"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'tag_list' for Article.):
+  app/controllers/articles_controller.rb:23:in `update'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.1ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.8ms)
+
+
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-05-18 01:32:58 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?  [["article_id", 9]]
+  Rendered articles/_form.html.erb (7.8ms)
+  Rendered articles/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 26ms (Views: 19.6ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-05-18 01:33:03 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xmisn6N/SWVfFbqiwtoYZpnYlIJMFmxq25sLpcJ6ThKotVLSnR/h6Fw+5CAu0lbfG8KE3loaRFLNX+0/U1mRYw==", "article"=>{"title"=>"sasambvsav", "body"=>"vsjavsnbavsanb", "tag_list"=>"ruby, development"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/models/article.rb:8:in `tag_list='
+  app/controllers/articles_controller.rb:23:in `update'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.4ms)
+
+
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-05-18 01:33:22 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xmisn6N/SWVfFbqiwtoYZpnYlIJMFmxq25sLpcJ6ThKotVLSnR/h6Fw+5CAu0lbfG8KE3loaRFLNX+0/U1mRYw==", "article"=>{"title"=>"sasambvsav", "body"=>"vsjavsnbavsanb", "tag_list"=>"ruby, development"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:33:22 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered comments/_form.html.erb (1.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-05-18 01:33:25 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_form.html.erb (8.9ms)
+  Rendered articles/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-05-18 01:39:19 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ctWw3WvfVIY10nrSNvGjtUo2WutKIXdIgObH5t10yaccCE6QVb/8Czb5JFDa+e0MyCxKt1wtX3CWIiF8TFcW1g==", "article"=>{"title"=>"sasambvsav", "body"=>"vsjavsnbavsanb", "tag_list"=>"ruby, development"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.8ms)
+
+NameError (undefined local variable or method `tags_names' for #<Article:0x007fa5458a96d8>):
+  app/models/article.rb:10:in `tag_list='
+  app/controllers/articles_controller.rb:23:in `update'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.0ms)
+
+
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-05-18 01:39:29 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ctWw3WvfVIY10nrSNvGjtUo2WutKIXdIgObH5t10yaccCE6QVb/8Czb5JFDa+e0MyCxKt1wtX3CWIiF8TFcW1g==", "article"=>{"title"=>"sasambvsav", "body"=>"vsjavsnbavsanb", "tag_list"=>"ruby, development"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT 1[0m  [["name", "ruby"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "ruby"], ["created_at", "2016-05-17 20:09:29.815535"], ["updated_at", "2016-05-17 20:09:29.815535"]]
+  [1m[36mTag Load (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT 1[0m  [["name", "development"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "development"], ["created_at", "2016-05-17 20:09:29.816906"], ["updated_at", "2016-05-17 20:09:29.816906"]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("article_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["article_id", 9], ["tag_id", 3], ["created_at", "2016-05-17 20:09:29.826364"], ["updated_at", "2016-05-17 20:09:29.826364"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "taggings" ("article_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["article_id", 9], ["tag_id", 4], ["created_at", "2016-05-17 20:09:29.827725"], ["updated_at", "2016-05-17 20:09:29.827725"]]
+  [1m[35m (177.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 201ms (ActiveRecord: 179.1ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:39:30 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered comments/_form.html.erb (1.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-05-18 01:39:34 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_form.html.erb (2.6ms)
+  Rendered articles/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-05-18 01:40:44 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F32XK0r9BwNkXBs1D9cl8xiv2f1RSXy6OidJYTGHpW95oGlmdJ2vjmd3Rbfj32tKmrXJoUdFVIIs46/7oKR6Hg==", "article"=>{"title"=>"sasambvsav", "body"=>"vsjavsnbavsanb", "tag_list"=>"ruby, development"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mTag Load (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT 1  [["name", "ruby"]]
+  [1m[36mTag Load (0.0ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT 1[0m  [["name", "development"]]
+  [1m[35mTag Load (0.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?  [["article_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:40:44 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/show.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `tag_path' for #<#<Class:0x007fa5593493a0>:0x007fa54d883f48>
+Did you mean?  tag_option):
+    2: <p>
+    3:   Tags:
+    4:   <% @article.tags.each do |tag| %>
+    5:       <%= link_to tag.name, tag_path(tag) %>
+    6:   <% end %>
+    7: </p>
+    8: 
+  app/views/articles/show.html.erb:5:in `block in _app_views_articles_show_html_erb__3503178787807986599_70173973550620'
+  app/views/articles/show.html.erb:4:in `_app_views_articles_show_html_erb__3503178787807986599_70173973550620'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.3ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:42:02 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered comments/_form.html.erb (1.0ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 89ms (Views: 78.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-18 01:42:02 +0530
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:02 +0530
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:42:38 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered comments/_form.html.erb (1.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered comments/_form.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/screen.self-16f83778566f2ea814368100ac8e534d7de4921c8d7334c3f01cc357b90c6547.css?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-18 01:42:46 +0530
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:44:38 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered comments/_form.html.erb (1.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 44ms (Views: 32.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tags/3" for 127.0.0.1 at 2016-05-18 01:44:40 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 3]]
+  Rendered tags/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:44:43 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered comments/_form.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tags/4" for 127.0.0.1 at 2016-05-18 01:44:58 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 4]]
+  Rendered tags/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2016-05-18 01:45:00 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered comments/_form.html.erb (0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 9]]
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  Rendered articles/_comment.html.erb (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:47:37 +0530
+Processing by TagsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant TagsController::Tags):
+  app/controllers/tags_controller.rb:3:in `index'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.2ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:47:46 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `title' for #<Tag:0x007fa54dd934c0>):
+    3: <ul id="tags">
+    4:   <% @tags.each do |tag| %>
+    5:       <li>
+    6:         <%= link_to tag.title, tag %>
+    7:       </li>
+    8:   <% end %>
+    9: </ul>
+  app/views/tags/index.html.erb:6:in `block in _app_views_tags_index_html_erb__623432471813114622_70173974718120'
+  app/views/tags/index.html.erb:4:in `_app_views_tags_index_html_erb__623432471813114622_70173974718120'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:49:08 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tags/2" for 127.0.0.1 at 2016-05-18 01:49:10 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 2]]
+  Rendered tags/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tags/4" for 127.0.0.1 at 2016-05-18 01:49:14 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 4]]
+  Rendered tags/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2016-05-18 01:49:16 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 1]]
+  Rendered tags/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/4" for 127.0.0.1 at 2016-05-18 01:49:19 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 4]]
+  Rendered tags/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tags/3" for 127.0.0.1 at 2016-05-18 01:49:22 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 3]]
+  Rendered tags/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2016-05-18 01:49:24 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 1]]
+  Rendered tags/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2016-05-18 01:49:28 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 1]]
+  Rendered tags/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-05-18 01:49:29 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 2]]
+  Rendered comments/_form.html.erb (0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  Rendered articles/_comment.html.erb (0.4ms)
+  Rendered articles/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:49:41 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2016-05-18 01:49:43 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?  [["tag_id", 1]]
+  Rendered tags/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:50:15 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:50:26 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (31.7ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `times' for #<#<Class:0x007fa54cdc2050>:0x007fa55a974418>
+Did you mean?  timeout):
+    4:   <% @tags.each do |tag| %>
+    5:       <li>
+    6:         <%= link_to tag.name, tag %>
+    7:         <%= link_to &times; %>
+    8:       </li>
+    9:   <% end %>
+   10: </ul>
+  app/views/tags/index.html.erb:7:in `block in _app_views_tags_index_html_erb__623432471813114622_70174083094500'
+  app/views/tags/index.html.erb:4:in `_app_views_tags_index_html_erb__623432471813114622_70174083094500'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.9ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:50:33 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/screen.self-16f83778566f2ea814368100ac8e534d7de4921c8d7334c3f01cc357b90c6547.css?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-18 01:50:39 +0530
+
+
+Started GET "/tags/2" for 127.0.0.1 at 2016-05-18 01:51:24 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?  [["tag_id", 2]]
+  Rendered tags/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+  [1m[36mTagging Load (1.7ms)[0m  [1mSELECT "taggings".* FROM "taggings"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "taggings"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "taggings"[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(true) FROM "taggings"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "taggings"[0m
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:58:48 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2016-05-18 01:58:51 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTag Load (0.3ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 1]]
+  Rendered tags/show.html.erb within layouts/application (46.3ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x007fa545efc760>:0x007fa54c849088>):
+    5:       <li><%= link_to article.title, article_path(article) %></li>
+    6:   <% end %>
+    7: </ul>
+    8: <%= link_to "Delete Tag", tag_path(@tag), data: {confirm: 'Really want to delete tag?'}, method: delete %>
+  app/views/tags/show.html.erb:8:in `_app_views_tags_show_html_erb__2074467840594542579_70173910064700'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.5ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.6ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2016-05-18 01:58:51 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?[0m  [["tag_id", 1]]
+  Rendered tags/show.html.erb within layouts/application (25.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x007fa545efc760>:0x007fa546097778>):
+    5:       <li><%= link_to article.title, article_path(article) %></li>
+    6:   <% end %>
+    7: </ul>
+    8: <%= link_to "Delete Tag", tag_path(@tag), data: {confirm: 'Really want to delete tag?'}, method: delete %>
+  app/views/tags/show.html.erb:8:in `_app_views_tags_show_html_erb__2074467840594542579_70173910675840'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.0ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:59:05 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2016-05-18 01:59:06 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?  [["tag_id", 1]]
+  Rendered tags/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/tags/1" for 127.0.0.1 at 2016-05-18 01:59:10 +0530
+Processing by TagsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FZBxwIWlIHCNPiY5CsitWNe49vp/RgnaywwYhw8SdHN7TY+Nu8WI/Y4VeLvmwOPhVaLmpmlKIeLdyP4dnjGrAg==", "id"=>"1"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "tags" WHERE "tags"."id" = ?[0m  [["id", 1]]
+  [1m[35m (192.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/tags
+Completed 302 Found in 195ms (ActiveRecord: 192.8ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 01:59:10 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "taggings"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "taggings"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "taggings"
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:01:43 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2016-05-18 02:01:53 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.4ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  app/controllers/articles_controller.rb:36:in `set_article'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.6ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-05-18 02:02:01 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 2]]
+  Rendered comments/_form.html.erb (0.9ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  Rendered articles/_comment.html.erb (0.4ms)
+  Rendered articles/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 35ms (Views: 25.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:03:09 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tags/2" for 127.0.0.1 at 2016-05-18 02:03:12 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?  [["tag_id", 2]]
+  Rendered tags/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/tags/2" for 127.0.0.1 at 2016-05-18 02:03:16 +0530
+Processing by TagsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vzs8dhA8dqtTD+B5qtcLykb0Mt+znPp/sYUAVVR/cqQ55sI7LlzeJlAkvvtG30VzxO4ig6WQ0kenQebPxVyt1Q==", "id"=>"2"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "tags" WHERE "tags"."id" = ?[0m  [["id", 2]]
+  [1m[35m (209.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/tags
+Completed 302 Found in 211ms (ActiveRecord: 209.5ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:03:17 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:03:45 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tags/3" for 127.0.0.1 at 2016-05-18 02:03:47 +0530
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" INNER JOIN "taggings" ON "articles"."id" = "taggings"."article_id" WHERE "taggings"."tag_id" = ?  [["tag_id", 3]]
+  Rendered tags/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/tags/3" for 127.0.0.1 at 2016-05-18 02:03:51 +0530
+Processing by TagsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xa6pPMq3USaf5QJG18BVHy8mfIalfXTzh/DTgaXNB6Crc1dx9Nf5q5zOXMQ7yBumrTxs2rNxXMuRNDUbNO7Y0Q==", "id"=>"3"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTagging Load (0.2ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = ?  [["tag_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "taggings" WHERE "taggings"."id" = ?  [["id", 3]]
+  [1m[36m (248.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tags" WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[35m (111.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/tags
+Completed 302 Found in 366ms (ActiveRecord: 360.5ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:03:52 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:05:02 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-05-18 02:05:12 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?  [["article_id", 2]]
+  Rendered comments/_form.html.erb (1.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 2]]
+  Rendered articles/_comment.html.erb (0.4ms)
+  Rendered articles/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2016-05-18 02:05:16 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?  [["article_id", 2]]
+  Rendered articles/_form.html.erb (1.9ms)
+  Rendered articles/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2016-05-18 02:05:22 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GjtwVfekb1coDDrqkzUrSeQuAJ7//F/GSQihsmjCbYF05o4YycTH2isnZGh/PWXwZjQQwunwd/5fzEco+eGy8A==", "article"=>{"title"=>"title another one", "body"=>"yet another body", "tag_list"=>"ruby, testing"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT 1[0m  [["name", "ruby"]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "ruby"], ["created_at", "2016-05-17 20:35:22.744814"], ["updated_at", "2016-05-17 20:35:22.744814"]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT 1[0m  [["name", "testing"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "testing"], ["created_at", "2016-05-17 20:35:22.748277"], ["updated_at", "2016-05-17 20:35:22.748277"]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?[0m  [["article_id", 2]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("article_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["article_id", 2], ["tag_id", 5], ["created_at", "2016-05-17 20:35:22.751679"], ["updated_at", "2016-05-17 20:35:22.751679"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "taggings" ("article_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["article_id", 2], ["tag_id", 6], ["created_at", "2016-05-17 20:35:22.753435"], ["updated_at", "2016-05-17 20:35:22.753435"]]
+  [1m[35m (254.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 268ms (ActiveRecord: 255.9ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-05-18 02:05:23 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."article_id" = ?  [["article_id", 2]]
+  Rendered comments/_form.html.erb (0.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 2]]
+  Rendered articles/_comment.html.erb (0.4ms)
+  Rendered articles/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:05:28 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"tags", :id=>nil} missing required keys: [:id]):
+    4:   <% @tags.each do |tag| %>
+    5:       <li>
+    6:         <%= link_to tag.name, tag %> |
+    7:         <%= link_to "Delete?", tag_path(@tag), data: {confirm: 'Really want to delete tag?'}, method: :delete %>
+    8:       </li>
+    9:   <% end %>
+   10: </ul>
+  app/views/tags/index.html.erb:7:in `block in _app_views_tags_index_html_erb__623432471813114622_70173911764320'
+  app/views/tags/index.html.erb:4:in `_app_views_tags_index_html_erb__623432471813114622_70173911764320'
+
+
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.8ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/prateek/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.9ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:05:38 +0530
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tags/5" for 127.0.0.1 at 2016-05-18 02:05:46 +0530
+Processing by TagsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qiVJRPjR9d18u/6YwZH1QV2kyxPepGKGetMLaYhhjD7E+LcJxrFdUH+QoBotmbv4377bT8ioSr5sF+3zGUJTTw==", "id"=>"5"}
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mTagging Load (0.1ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = ?  [["tag_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "taggings" WHERE "taggings"."id" = ?  [["id", 5]]
+  [1m[36m (126.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tags" WHERE "tags"."id" = ?[0m  [["id", 5]]
+  [1m[35m (111.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/tags
+Completed 302 Found in 241ms (ActiveRecord: 238.5ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2016-05-18 02:05:47 +0530
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms)
